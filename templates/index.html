@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/cupcake.css">
+  <title>Cupcakes</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="text-center display-3">Our Cupcakes</h1>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <ul>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-5 border border-1">
+      <div class="col-6">
+        <h3>Add a new cupcake</h3>
+        <form id="new-cupcake-form">
+          <div class="row mb-3 mt-3">
+          <label class="col-sm-2 col-form-label" for="form-flavor">Flavor</label>
+          <div class="col-sm-10">
+          <input type="text" name="flavor" placeholder="flavor" id="form-flavor">
+          </div>  
+          </div>
+          
+          <div class="row mb-3 mt-3">
+          <label class="col-sm-2" for="form-size">Size</label>
+          <div class="col-sm-10">
+          <input type="text" name="size" placeholder="size" id="form-size">
+          </div>
+          </div>
+          
+          <div class="row mb-3 mt-3">
+          <label class="col-sm-2" for="form-rating">Rating</label>
+          <div class="col-sm-10">
+          <input type="text" name="rating" placeholder="rating" id="form-rating">
+          </div>
+          </div>
+
+          <div class="row mb-3 mt-3">
+          <label class="col-sm-2" for="form-image">Image</label>
+          <div class="col-sm-10">
+          <input type="text" name="image" placeholder="image url" id="form-image">
+          </div>
+          </div>
+
+          <button class="btn btn-primary mb-2">Add!</button>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+    integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="static/cupcake.js"></script>
+</body>
+
+</html>
